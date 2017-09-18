@@ -73,18 +73,34 @@ public class Diagnosis extends Thread {
         }
 
         // get data from sensor
-        try {
-            File file_ill = new File("illuminance.txt");
-            File file_tmp = new File("temperature.txt");
-            FileReader fr_ill = new FileReader(file_ill);
-            FileReader fr_tmp = new FileReader(file_tmp);
-            BufferedReader br_ill = new BufferedReader(fr_ill);
-            BufferedReader br_tmp = new BufferedReader(fr_tmp);
+        while(true) {
+            try {
+                File file_ill = new File("illuminance.txt");
+                if(file_ill == null) continue;
+                File file_tmp = new File("temperature.txt");
+                if(file_tmp == null) continue;
+                FileReader fr_ill = new FileReader(file_ill);
+                if(fr_ill == null) continue;
+                FileReader fr_tmp = new FileReader(file_tmp);
+                if(fr_tmp == null) continue;
+                BufferedReader br_ill = new BufferedReader(fr_ill);
+                if(br_ill == null) continue;
+                BufferedReader br_tmp = new BufferedReader(fr_tmp);
+                if(br_tmp == null) continue;
 
-            ill_data = Integer.parseInt(br_ill.readLine());
-            tmp_data = Integer.parseInt(br_tmp.readLine());
-        } catch (Exception e) {
-            e.printStackTrace();
+                String ill_line, tmp_line;
+
+                ill_line = br_ill.readLine();
+                if(ill_line == null) continue;
+                tmp_line = br_tmp.readLine();
+                if(tmp_line == null) continue;
+
+                ill_data = Integer.parseInt(ill_line);
+                tmp_data = Integer.parseInt(tmp_line);
+                break;
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
 
         // write out
