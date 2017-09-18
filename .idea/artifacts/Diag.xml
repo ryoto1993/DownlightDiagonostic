@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Diag">
+    <output-path>$PROJECT_DIR$/out/artifacts/Diag</output-path>
+    <root id="archive" name="Diag.jar">
+      <element id="library" level="project" name="jackson-annotations-2.9.0" />
+      <element id="library" level="project" name="jackson-core-2.9.0" />
+      <element id="library" level="project" name="jackson-databind-2.9.0" />
+      <element id="library" level="project" name="SocketLightingSystemLibrary" />
+      <element id="module-output" name="DownlightDiagonostic" />
+    </root>
+  </artifact>
+</component>

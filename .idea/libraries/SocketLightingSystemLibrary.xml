@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SocketLightingSystemLibrary">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/SocketLightingSystemLibrary.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

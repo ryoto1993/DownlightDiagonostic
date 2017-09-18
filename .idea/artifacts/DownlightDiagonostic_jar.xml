@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DownlightDiagonostic:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DownlightDiagonostic_jar</output-path>
+    <root id="archive" name="DownlightDiagonostic.jar">
+      <element id="module-output" name="DownlightDiagonostic" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jackson-core-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/SocketLightingSystemLibrary.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jackson-databind-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/jackson-annotations-2.9.0.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
